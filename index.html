@@ -1,27 +1,90 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!doctype html>
 <html>
 <head>
- <title>My first styled page</title>
- <link rel="stylesheet" href="mystyle.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>名侦探柯南</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
-<!-- Site navigation menu -->
-<ul class="navbar">
- <li><a href="https://www.youku.com/">Home page</a>
- <li><a href="musings.html">Musings</a>
- <li><a href="town.html">My town</a>
- <li><a href="links.html">Links</a>
-</ul>
-<!-- Main content -->
-<h1>My first styled page</h1>
-<p>Welcome to my styled page!
-<p>It lacks images, but at least it has style.
-And it has links, even if they don't go
-anywhere&hellip;
-<p>There should be more here, but I don't know
-what yet.
-<!-- Sign and date the page, it's only polite! -->
-<address>Made 5 April 2004<br>
- by myself.</address>
+<div class="container">
+  <header>
+    <nav class="navbar navbar-expand-sm navbar-dark" >
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav bg-danger float-right" >
+          <li class="nav-item"> <a class="nav-link" href="#" >首页</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#"  >剧情简介</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" >主要人物</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#"  >道具设定</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#"  >动画制作</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#"  >剧集信息</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <div class="carousel-inner" >
+      <div class="carousel-item active"> <img src="img/11.jpg" class="img-fluid" width="100%"> </div>
+      <div class="carousel-item"> <img src="img/22.jpg" class="img-fluid"  width="100%"> </div>
+      <div class="carousel-item"> <img src="img/33.jpg" class="img-fluid"  width="100%"> </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#demo" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#demo" data-slide="next"> <span class="carousel-control-next-icon"></span> </a> </div>
+    <div class="jumbotron">
+  <h4>剧情简介</h4>
+  <p>高中生侦探工藤新一和青梅竹马的同学毛利兰一同去游乐园玩的时候，目击了黑衣男子的可疑交易现场。只顾偷看交易的工藤新一，却忽略了从背后接近的另一名同伙。他被那名男子灌下了毒药，当他醒来时，身体居然缩小了！
+如果让那些家伙知道工藤新一还活着的话，不仅性命难保，还会危及身边的人。在阿笠博士的建议下他决定隐瞒身份，在被小兰问及名字时，化名江户川柯南，为了搜集那些家伙的情报，寄住在父亲以侦探为业的小兰家中。
+谜团重重的黑衣组织……他所了解的，就只有他们是以酒的名称作为代号的。为了揭露那些家伙的真面目，小小侦探江户川柯南开始大显身手！</p>
+  <p><a class="btn btn-primary btn-sm bg-danger" href="https://baike.baidu.com/item/%E5%90%8D%E4%BE%A6%E6%8E%A2%E6%9F%AF%E5%8D%97/3469662?fr=aladdin" target="_blank" role="button">MORE</a></p>
+</div>
+
+<h4>主要人物</h4>
+  <div class="row space">
+    <div class="col-md-3  text-center img">
+    	<div class="cover">
+    		<h1>江户川柯南</h1>
+    		<p>	外表看似小孩，其真实身份是高中生侦探——工藤新一。和青梅竹马的同学毛利兰一起去游乐园玩，目击到黑衣男子的可疑交易现场，被灌下开发中的药物，变成了小学生的身体。那天以后，为了隐藏真实身份，化名江户川柯南，在青梅竹马的毛利兰家寄住的同时，日复一日解决了许多案件。一切都是为了恢复自己的身体。</p>
+    	</div>
+    	<img src="img/6.png" class="img-fluid"></div>
+
+    <div class="col-md-3  text-center img">
+    	<div class="cover">
+    		<h1>工藤新一</h1>
+    		<p>崇拜夏洛克·福尔摩斯的高中生侦探。5月4日出生，17岁。帝丹高中2年级B班。还是高中1年级学生的时候，在去往洛杉矶的飞机上解决了杀人案，在那里和目暮警官等人相识。</p>
+    	</div>
+    	<img src="img/7.png" class="img-fluid"></div>
+
+    <div class="col-md-3  text-center img">
+    	<div class="cover">
+    		<h1>毛利兰</h1>
+    		<p>新一的青梅竹马，帝丹高中2年级B班，空手道社团女主将，都大会中有头号实力的文武双全的女生。喜欢新一，在他突然消失后等待着他的归来。有时柯南的名推理会与新一的身影重叠，她开始像母亲一般温柔地照顾着柯南和少年侦探团。此外，和发小铃木园子是挚友，从以前开始便无话不谈。</p>
+    	</div>
+    	<img src="img/8.png" class="img-fluid"></div>
+
+    <div class="col-md-3  text-center img">
+    	<div class="cover">
+    		<h1>毛利小五郎</h1>
+    		<p>小兰的父亲，前警视厅搜查一课刑警，与目暮警部是故交。现在在毛利侦探事务所营业，多亏了柯南的名推理，以“沉睡的小五郎”闻名。经过小兰的拼命努力，经常与分居中的妻子——妃英理见面，有好色的一面妨碍着，很难坦率地重修旧好。</p>
+    	</div>
+    	<img src="img/9.png" class="img-fluid"></div>
+  </div>
+
+  <footer>
+       <div class="text-center bg-dark p-2 text-light"> 名侦探柯南</div>
+  </footer>
+</div>
 </body>
 </html>
